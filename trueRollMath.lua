@@ -20,7 +20,6 @@
     - Results verifiable by any observer with the seed table + inputs
     - Built for Lua 5.1 (Nakama server scripting)
     - Every number depends only on the initial public seed table and user inputs
-    - Player touch input can influence rolls but cannot bias the system
     - Hash of seed table (trueTable) can be generated to send to players at the beginning of the game
 
   Testing Note:
