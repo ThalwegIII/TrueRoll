@@ -143,8 +143,8 @@ function trueRollMath.throw_true_die(trueThrow, dieSize, trueTable, advancingSee
     -- Derive table index from advancingSeed
     local tableIndex = (advancingSeed % #trueTable) + 1
 
-    -- Just to keep low or weird trueThrow values 
-    local mix = bit.bxor(trueThrow, 0xA5A5A5A5) % 4294967296
+    -- Quick scramble 
+    local mix = bit.bxor(trueThrow, 0xD1CEC0DE) % 4294967296
 
     -- Combine everything into one seed
     local combined_seed = (trueTable[tableIndex] + mix + advancingSeed) % 4294967296
