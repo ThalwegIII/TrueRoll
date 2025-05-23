@@ -170,19 +170,9 @@ end
 
 -- --- Hash the trueTable into a verification string
 function trueRollMath.hash_true_table(trueTable)
-    assert(type(trueTable) == "table", "Expected trueTable to be a table.")
-
     local concat = ""
     for i, v in ipairs(trueTable) do
-        concat = concat .. tostring(v) .. ","
-    end
-
-    -- Remove trailing comma
-    if #concat > 0 then
-        concat = string.sub(concat, 1, -2)
-    end
-
-    -- Hash it
+        concat = concat .. tostring(v)
     return nk.sha256_hash(concat)
 end
 
