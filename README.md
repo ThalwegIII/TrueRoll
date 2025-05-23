@@ -1,14 +1,13 @@
 # TrueRoll
 Lua implementation of the True Roll algorithm
 
-  Implentation of TrueRoll(c) A stateless, auditable die roller
-  for games using Nakama server
+  Implentation of TrueRoll(c) for games using Nakama server
   -----------------------------------------
   Author: Huge Workshop
   Created: 2025
 
   Description:
-    TrueRoll(c) is a auditable die rolling engine in which all server-side randomness is 
+    TrueRoll(c) is a stateless, auditable die rolling engine in which all server-side randomness is 
     generated at the beginning of the game. After this server state (the trueTable) is fixed, 
     only playerInput (the trueThrow) is allowed as new data into the 
     die rolling generator during the course of the game.
