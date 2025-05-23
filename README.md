@@ -26,7 +26,8 @@ Lua implementation of the True Roll algorithm
     - See local test block at the bottom for mass testing roll distribution
 
   Usage:
-    local trueTable, seed = trueRollMath.initialize_true_roll(64)  <- Generate these at the start of the game. Save in DB 
+  
+    local trueTable, seed = trueRollMath.initialize_true_roll(64)  <- Generate these at the start of the game. Save in DB
     local roll, newSeed = trueRollMath.throw_true_die(player_input, 6, trueTable, seed)  <- Do this for every roll. Save newSeed in DB after each use
     local hash = hash_true_table(trueTable) <- Send this to the player at the beginning of the game
 
