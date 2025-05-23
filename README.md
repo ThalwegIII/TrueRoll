@@ -1,7 +1,7 @@
 # TrueRoll
 Lua implementation of the True Roll algorithm
 
-  Implentation of TrueRoll(c) A Stateless, auditable die roller
+  Implentation of TrueRoll(c) A stateless, auditable die roller
   for games using Nakama server
   -----------------------------------------
   Author: Huge Workshop
