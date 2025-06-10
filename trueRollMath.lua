@@ -171,8 +171,9 @@ end
 -- --- Hash the trueTable into a verification string
 function trueRollMath.hash_true_table(trueTable)
     local concat = ""
-    for i, v in ipairs(trueTable) do
+    for _, v in ipairs(trueTable) do
         concat = concat .. tostring(v)
+    end
     return nk.sha256_hash(concat)
 end
 
@@ -217,6 +218,12 @@ local function true_roll_mass_test(roll_count, die_size, table_size)
 
     print("=== End of Test ===")
 end
+
+-- local trueRollMath = require("trueRollMath")
+--true_roll_mass_test(10000000, 6, 64) -- <-- 3. To test locally comment in 
+
+return trueRollMath
+
 
 -- local trueRollMath = require("trueRollMath")
 --true_roll_mass_test(10000000, 6, 64) -- <-- 3. To test locally comment in 
