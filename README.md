@@ -1,7 +1,7 @@
 # TrueRoll
-Lua implementation of the True Roll algorithm
+Lua implementation of the True Roll(tm) algorithm
 
-  Implentation of TrueRoll(c) for games using Nakama server
+  Implentation of True Roll for games using Nakama server
   -----------------------------------------
   Author: Huge Workshop
   Created: 2025
